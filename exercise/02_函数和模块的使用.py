@@ -50,11 +50,24 @@ Author: 骆昊
 # print(roll_dice(3))
 
 # 4.可变参数
-def add(*args):
-    total = 0
-    for num in args:
-        total += num
-    return total
+# def add(*args):
+#     total = 0
+#     for num in args:
+#         total += num
+#     return total
+#
+#
+# print(add(1, 2, 3))
+
+# 练习1
+def gcd(x, y):
+    """求最大公约数"""
+    (x, y) = (y, x) if x > y else (x, y)
+    for factor in range(x, 0, -1):
+        if x % factor == 0 and y % factor == 0:
+            return factor
 
 
-print(add(1, 2, 3))
+def lcm(x, y):
+    """求最小公倍数"""
+    return x * y // gcd(x, y)
