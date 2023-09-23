@@ -60,8 +60,10 @@ Author: 骆昊
 # print(add(1, 2, 3))
 
 # 练习1
+'''
 def gcd(x, y):
     """求最大公约数"""
+    # 三元表达式交换两个变量的值，如果x>y,交换变量的值；否则，不交换
     (x, y) = (y, x) if x > y else (x, y)
     for factor in range(x, 0, -1):
         if x % factor == 0 and y % factor == 0:
@@ -71,3 +73,11 @@ def gcd(x, y):
 def lcm(x, y):
     """求最小公倍数"""
     return x * y // gcd(x, y)
+
+# 调用函数
+print(gcd(3, 12))
+print(lcm(4,25))
+'''
+
+'''print('hello world')'''
+
