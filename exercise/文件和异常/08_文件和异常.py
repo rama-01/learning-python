@@ -1,5 +1,5 @@
 def main():
-    f = open('demo.txt', 'r', encoding='utf-16')
+    f = open('hello.txt', 'r', encoding='utf-8')
     print(f.read(), end='')
     f.close()
 
