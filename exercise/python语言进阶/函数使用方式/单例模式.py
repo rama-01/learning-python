@@ -16,4 +16,3 @@ def singleton(cls):
 class President:
     """总统(单例类)"""
     pass
-
