@@ -1,5 +1,6 @@
 from functools import wraps
 
+
 def singleton(cls):
     """装饰类的装饰器"""
     instances = {}
@@ -11,6 +12,7 @@ def singleton(cls):
         return instances[cls]
 
     return wrapper
+
 
 @singleton
 class President:

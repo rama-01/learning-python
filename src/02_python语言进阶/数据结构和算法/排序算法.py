@@ -9,5 +9,5 @@ def select_sort(items, comp=lambda x, y: x < y):
         items[i], items[min_index] = items[min_index], items[i]
     return items
 
-res=select_sort([12,0,1,-2,12,-100])
+res = select_sort([12, 0, 1, -2, 12, -100])
 print(res)

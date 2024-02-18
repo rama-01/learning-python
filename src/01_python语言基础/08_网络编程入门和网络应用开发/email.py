@@ -2,6 +2,7 @@ from smtplib import SMTP
 from email.header import Header
 from email.mime.text import MIMEText
 
+
 def main():
     # 请自行修改下面的邮件发送者和接收者
     sender = 'abcdefg@126.com'
@@ -15,6 +16,7 @@ def main():
     smtper.login(sender, 'secretpass')
     smtper.sendmail(sender, receivers, message.as_string())
     print('邮件发送完成!')
+
 
 if __name__ == '__main__':
     main()

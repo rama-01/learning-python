@@ -1,0 +1,21 @@
+row = int(input('please input print row:'))
+
+for x in range(row):
+    for y in range(x + 1):
+        print('*', end=' ')
+    print()
+
+for i in range(row):
+    for j in range(row):
+        if j < row - i - 1:
+            print(' ', end=' ')
+        else:
+            print('*', end=' ')
+    print()
+
+for i in range(row):
+    for _ in range(row - i - 1):
+        print(' ', end=' ')
+    for _ in range(2 * i + 1):
+        print('*', end=' ')
+    print()
