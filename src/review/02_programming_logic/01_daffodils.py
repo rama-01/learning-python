@@ -4,4 +4,3 @@ for x in range(100, 1000):
     high = x // 100
     if low ** 3 + mid ** 3 + high ** 3 == x:
         print(x)
-.

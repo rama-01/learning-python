@@ -11,5 +11,6 @@ def bubble_sort(items, comp=lambda x, y: x > y):
             break
     return items
 
+
 res = bubble_sort([12, 3, 44, 121, -23])
 print(res)
